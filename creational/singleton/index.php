@@ -1,6 +1,5 @@
 <?php
 
-
 include 'connection.php';
 
 $object  = Connection::getInstance();
