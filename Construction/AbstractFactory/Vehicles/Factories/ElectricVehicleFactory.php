@@ -3,9 +3,9 @@
 
 namespace AbstractFactory\Vehicles\Factories;
 
-use AbstractFactory\ElectricScooter;
 use AbstractFactory\Vehicles\Car\ElectricCar;
 use AbstractFactory\Vehicles\Interfaces\FactoryCarInterface;
+use AbstractFactory\Vehicles\Scooter\ElectricScooter;
 
 /**
  * Class FactoryElectricVehicle

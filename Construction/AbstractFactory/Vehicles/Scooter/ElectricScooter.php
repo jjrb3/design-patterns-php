@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AbstractFactory;
+namespace AbstractFactory\Vehicles\Scooter;
 
 
 
