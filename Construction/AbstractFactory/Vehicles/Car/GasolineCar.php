@@ -1,15 +1,16 @@
 <?php
 
 
-namespace AbstractFactory;
+namespace AbstractFactory\Vehicles\Car;
 
-use Construction\AbstractFactory\Abstracts\Car;
+
+use AbstractFactory\Vehicles\Abstracts\CarAbstract;
 
 /**
  * Class GasolineCar
  * @package AbstractFactory
  */
-class GasolineCar extends Car
+class GasolineCar extends CarAbstract
 {
     /**
      * GasolineCar constructor.

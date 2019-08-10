@@ -1,10 +1,13 @@
 <?php
 
 
-namespace AbstractFactory\Abstracts;
+namespace AbstractFactory\Vehicles\Abstracts;
 
-
-abstract class Scooter
+/**
+ * Class ScooterAbstract
+ * @package AbstractFactory\Abstracts
+ */
+abstract class ScooterAbstract
 {
     /**
      * @var string
@@ -22,7 +25,7 @@ abstract class Scooter
     protected $power;
 
     /**
-     * Scooter constructor.
+     * ScooterAbstract constructor.
      *
      * @param string $model
      * @param string $color

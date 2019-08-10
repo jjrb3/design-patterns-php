@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Construction\AbstractFactory\Abstracts;
+namespace AbstractFactory\Vehicles\Abstracts;
 
 /**
- * Class Car
+ * Class CarAbstract
  * @package Construction\AbstractFactory\Abstracts
  */
-abstract class Car
+abstract class CarAbstract
 {
     /**
      * @var string
@@ -30,7 +30,7 @@ abstract class Car
     protected $space;
 
     /**
-     * Car constructor.
+     * CarAbstract constructor.
      *
      * @param string $model
      * @param string $color

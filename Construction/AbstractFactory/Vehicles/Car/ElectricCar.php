@@ -1,26 +1,28 @@
 <?php
 
 
-namespace AbstractFactory;
+namespace AbstractFactory\Vehicles\Car;
 
-use AbstractFactory\Abstracts\Scooter;
+
+use AbstractFactory\Vehicles\Abstracts\CarAbstract;
 
 /**
- * Class ElectricScooter
+ * Class ElectricCar
  * @package AbstractFactory
  */
-class ElectricScooter extends Scooter
+class ElectricCar extends CarAbstract
 {
     /**
-     * ElectricScooter constructor.
+     * ElectricCar constructor.
      *
      * @param string $model
      * @param string $color
      * @param int $power
+     * @param float $space
      */
-    public function __construct(string $model, string $color, int $power)
+    public function __construct(string $model, string $color, int $power, float $space)
     {
-        parent::__construct($model, $color, $power);
+        parent::__construct($model, $color, $power, $space);
     }
 
     /**

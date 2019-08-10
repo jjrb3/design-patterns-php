@@ -3,25 +3,26 @@
 
 namespace AbstractFactory;
 
-use AbstractFactory\Abstracts\Scooter;
+
+
+use AbstractFactory\Vehicles\Abstracts\ScooterAbstract;
 
 /**
- * Class GasolineCar
+ * Class ElectricScooter
  * @package AbstractFactory
  */
-class GasolineScooter extends Scooter
+class ElectricScooter extends ScooterAbstract
 {
     /**
-     * GasolineScooter constructor.
+     * ElectricScooter constructor.
      *
      * @param string $model
      * @param string $color
      * @param int $power
-     * @param float $space
      */
-    public function __construct(string $model, string $color, int $power, float $space)
+    public function __construct(string $model, string $color, int $power)
     {
-        parent::__construct($model, $color, $power, $space);
+        parent::__construct($model, $color, $power);
     }
 
     /**
@@ -29,7 +30,7 @@ class GasolineScooter extends Scooter
      */
     public function showFeatures(): string
     {
-        return "Model gasoline car: {$this->model}, "
+        return "Model electric car: {$this->model}, "
             . "color {$this->color}, "
             . "power {$this->power} and "
             . "space {$this->color}.";
